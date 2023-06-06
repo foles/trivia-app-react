@@ -8,9 +8,9 @@
 body {
   background-color: #fdc083;
   opacity: 1;
-  background-image:  radial-gradient(#4e56ff 0.75px, transparent 0.75px), radial-gradient(#4e56ff 0.75px, #fdc083 0.75px);
-  background-size: 30px 30px;
-  background-position: 0 0,15px 15px;
-  font-family: 'Inter', sans-serif;
+  font-family: 'Londrina Solid', cursive;
 }
 
+.link-text{
+  text-decoration: none;
+}
