@@ -66,6 +66,7 @@ export const preguntas = {
      {
       "Pregunta": "¿Cuál fue el primer psicologo del mundo?",
       "Incorrecta1": "William James",
+      "Incorrecta2": "Carl Jung",
       "Incorrecta3": "Sigmund Freud",
       "Correcta": "Wilhelm Wundt"
      },
@@ -325,6 +326,9 @@ export const preguntas = {
      },
      {
       "Pregunta": "¿Quién es el protagonista de la película “Rocky”?",
+      "Incorrecta1": "Arnold Schwarzenegger",
+      "Incorrecta2": "Jean-Claude Van Damme",
+      "Incorrecta3": "Dolph Lundgren",
       "Correcta": "Sylvester Stallone"
      },
      {
@@ -1196,6 +1200,9 @@ export const preguntas = {
      },
      {
       "Pregunta": "¿Cuál es la nacionalidad de Pablo Neruda?",
+      "Incorrecta1": "España",
+      "Incorrecta2": "Mexico",
+      "Incorrecta3": "Bolivia",
       "Correcta": "Chilena"
      },
      {
@@ -1482,6 +1489,9 @@ export const preguntas = {
      },
      {
       "Pregunta": "¿Qué instrumento óptico permite ver los astros de cerca?",
+      "Incorrecta1": "Microscopio",
+      "Incorrecta2": "Periscopio",
+      "Incorrecta3": "Binoculares Espaciales",
       "Correcta": "Telescopio"
      },
      {
@@ -1493,16 +1503,23 @@ export const preguntas = {
      },
      {
       "Pregunta": "La campana de Gauss está asociada a…",
+      "Incorrecta1": "la fabricación de campanas",
+      "Incorrecta2": "resolución de ecuaciones matemáticas complejas",
+      "Incorrecta3": "un antiguo ritual alquimista",
       "Correcta": "el cálculo de probabilidades."
      },
      {
       "Pregunta": "¿En qué lugar del cuerpo se produce la insulina?",
       "Incorrecta1": "Hígado",
+      "Incorrecta2": "Vasos Sanguíneos",
       "Incorrecta3": "Riñones",
       "Correcta": "Páncreas"
      },
      {
       "Pregunta": "¿Cómo se llama el proceso por el cual las plantas obtienen alimento?",
+      "Incorrecta1": "Transducción nutricional",
+      "Incorrecta2": "Absorción nutricional",
+      "Incorrecta3": "Alimentación Clorofílica",
       "Correcta": "Fotosíntesis."
      },
      {
@@ -1515,6 +1532,8 @@ export const preguntas = {
      {
       "Pregunta": "El triángulo que tiene sus tres lados iguales ¿Cómo se llama?",
       "Incorrecta1": "Isóceles",
+      "Incorrecta2": "Escaleno",
+      "Incorrecta3": "Obtusángulo",
       "Correcta": "Equilatero"
      },
      {
@@ -1526,6 +1545,9 @@ export const preguntas = {
      },
      {
       "Pregunta": "¿Qué es un ovíparo?",
+      "Incorrecta1": "Un animal con reproducción asexual",
+      "Incorrecta2": "Un animal que puede cambiar de sexo durante su ciclo de vida",
+      "Incorrecta3": "Un animal que come tanto carne como plantas",
       "Correcta": "Un animal que nace de un huevo."
      },
      {
@@ -1684,4 +1706,3 @@ export const preguntas = {
      }
     ]
 };
-
