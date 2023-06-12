@@ -15,16 +15,15 @@ export default function Quiz() {
   const [seconds, setSeconds] = useState(10); // Establece el tiempo inicial en segundos
 
   const [respuestasRandom, setRespuestasrandom] = useState([]); // Establece el tiempo inicial en segundos
-
+  var timer;
 
   useEffect(() => {
     // Actualiza el temporizador cada segundo
-    const timer = setInterval(() => {
+    timer= setInterval(() => {
       setSeconds(prevSeconds => prevSeconds - 1);
     }, 1000);
     //Valida si el tiempo es 0
     if (seconds === 0) {
-    clearInterval(timer)
 
       validaPregunta()
     }
@@ -54,6 +53,8 @@ export default function Quiz() {
   const {pregunta, respuestas, correcta} = location.state;
 
   function validaPregunta(respuesta) {
+    clearInterval(timer)
+
     console.log(respuesta);
 
     if(respuesta === correcta){
