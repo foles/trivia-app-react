@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/trivia-app-react/static/css/main.06f9cfae.css",
+    "main.js": "/trivia-app-react/static/js/main.cb29e795.js",
+    "static/media/logo-trivia.png": "/trivia-app-react/static/media/logo-trivia.330d5c85aa81dda82f52.png",
+    "static/media/historia.svg": "/trivia-app-react/static/media/historia.30045031fc36464c3464dc6ac4f24038.svg",
+    "static/media/entretenimiento.svg": "/trivia-app-react/static/media/entretenimiento.d8fa9de51bc180f213ed24eaf0fcdcc6.svg",
+    "static/media/geografia.svg": "/trivia-app-react/static/media/geografia.b4f50945909685ae1c0444345adb4e3c.svg",
+    "static/media/artes.svg": "/trivia-app-react/static/media/artes.5d4e10c497e5b1aebbc62ca1ade8953f.svg",
+    "static/media/ciencia.svg": "/trivia-app-react/static/media/ciencia.582231ca8ce3749e81f0604e263bf540.svg",
+    "static/media/deportes.svg": "/trivia-app-react/static/media/deportes.6d5d4c1566978137e13f63908bcd89b6.svg",
+    "index.html": "/trivia-app-react/index.html",
+    "main.06f9cfae.css.map": "/trivia-app-react/static/css/main.06f9cfae.css.map",
+    "main.cb29e795.js.map": "/trivia-app-react/static/js/main.cb29e795.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.06f9cfae.css",
+    "static/js/main.cb29e795.js"
+  ]
+}
