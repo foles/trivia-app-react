@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import { BrowserRouter, Route, Routes, Navigate } from 'react-router-dom'
+import { BrowserRouter as Router, Route, Routes, Navigate } from 'react-router-dom'
 
 import './index.css';
 import App from './App';
@@ -16,7 +16,7 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
 
-    <BrowserRouter>
+    <Router basename={process.env.PUBLIC_URL}>
       <Routes>
         <Route path="/" element={<App />} />
         <Route path="/*" element={<Navigate to="/" />} />
@@ -26,7 +26,7 @@ root.render(
         <Route path="/quiz" element={<Quiz />} />
 
       </Routes>
-    </BrowserRouter>
+    </Router>
     <Footer />
   </React.StrictMode>
 );
