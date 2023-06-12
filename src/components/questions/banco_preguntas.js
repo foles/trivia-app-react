@@ -1182,6 +1182,9 @@ export const preguntas = {
      },
      {
       "Pregunta": "¿Quién escribió “Hamlet”?",
+      "Incorrecta1": "Miguel de Cervantes",
+      "Incorrecta2": "Leo Tolstoy",
+      "Incorrecta3": "Charles Dickens",
       "Correcta": "William Shakespeare"
      },
      {

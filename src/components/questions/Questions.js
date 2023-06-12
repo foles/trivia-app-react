@@ -44,6 +44,15 @@ export default function Questions() {
   }, [])
 
 
+  function shuffleArray(array) {
+    for (let i = array.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [array[i], array[j]] = [array[j], array[i]];
+    }
+    return array;
+  }
+
+
 
   return (
     <div className='questions'>
@@ -57,7 +66,7 @@ export default function Questions() {
         </h1>
         <div className='questions-cards'>
           {
-            listQuestions.map(item => 
+            shuffleArray(listQuestions).map(item => 
               <Link className='card-question' to={"/quiz"}
               state={{
                 pregunta: item.Pregunta,

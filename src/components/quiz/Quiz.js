@@ -2,12 +2,53 @@ import  { useEffect, useState } from 'react';
 import React from 'react'
 import './Quiz.css';
 import logo from '../../assets/logo-trivia.png';
-import { useLocation } from 'react-router-dom';
-
+import { Navigate, useLocation, useNavigate } from 'react-router-dom';
+// import { useNavigate } from 'react-router-dom';
 import Swal from 'sweetalert2';
 
 
 export default function Quiz() {
+  const navigate = useNavigate(); // react-router-dom v6
+
+  // const history = useHistory();
+  // const navigate = useNavigate();
+  const [seconds, setSeconds] = useState(10); // Establece el tiempo inicial en segundos
+
+  const [respuestasRandom, setRespuestasrandom] = useState([]); // Establece el tiempo inicial en segundos
+
+
+  useEffect(() => {
+    // Actualiza el temporizador cada segundo
+    const timer = setInterval(() => {
+      setSeconds(prevSeconds => prevSeconds - 1);
+    }, 1000);
+    //Valida si el tiempo es 0
+    if (seconds === 0) {
+    clearInterval(timer)
+
+      validaPregunta()
+    }
+    // Cuando el componente se desmonte, se limpia el temporizador
+    return () => clearInterval(timer);
+  }, [seconds]);
+
+
+  useEffect(() => {
+    let mounted = true;
+    setRespuestasrandom(shuffleArray(respuestas))
+    return () => mounted = false;
+  }, []);
+
+
+  function shuffleArray(array) {
+    for (let i = array.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [array[i], array[j]] = [array[j], array[i]];
+    }
+    return array;
+  }
+
+
 
   const location = useLocation();
   const {pregunta, respuestas, correcta} = location.state;
@@ -15,7 +56,7 @@ export default function Quiz() {
   function validaPregunta(respuesta) {
     console.log(respuesta);
 
-    if(respuesta == correcta){
+    if(respuesta === correcta){
       Swal.fire({
         title: 'Respuesta Correcta',
         icon: 'success',
@@ -29,6 +70,8 @@ export default function Quiz() {
           center top
           no-repeat
         `
+      }).then((result) => {
+        navigate(-1)
       })
     } else {
       Swal.fire({
@@ -44,6 +87,8 @@ export default function Quiz() {
           center top
           no-repeat
         `
+      }).then((result) => {
+        navigate(-1)
       })
     }
 
@@ -64,15 +109,16 @@ export default function Quiz() {
       </header>
 
       <div className='quiz-body'>
+        <div className='timer-quiz'>
+          <h1>Tiempo : {seconds}</h1>
+        </div>   
         <h1>
         {pregunta}
         </h1>
 
-       
-
         <div className='quiz-cards' >
           {
-            respuestas.map(item => 
+            respuestasRandom.map(item => 
               <div className='quiz-option' onClick={() => validaPregunta(item)} >{item}</div> 
               )
           }
