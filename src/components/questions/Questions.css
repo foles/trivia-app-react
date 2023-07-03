@@ -53,6 +53,24 @@
   background-color: #3e1cb6cb;
 }
 
+
+.card-question-answered {
+  width: 120px;
+  height: 120px;
+  transition: all 0.2s;
+  position: relative;
+  margin: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 2.5rem;
+  border-radius: 25px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+  background-color: #b61c1ccb;
+}
+
 .card-question:hover {
   border: solid 5px white;
 }

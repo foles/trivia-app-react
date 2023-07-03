@@ -12,47 +12,18 @@ import { Link } from "react-router-dom";
 export default function Questions() {
 
   const location = useLocation();
-  const {category } = location.state;
+  const {category, questions } = location.state;
   const [listQuestions, setListquestions] = useState([]);
   var i = 1;
-  useEffect(() => {
-    let mounted = true;
-    console.log(category);
-    switch(category){
-      case 'Historia' : 
-        setListquestions(preguntas.Historia);
-        break;
-        case 'Deportes' : 
-        setListquestions(preguntas.Deporte);
-        break;
-        case 'Artes' : 
-        setListquestions(preguntas.Arte);
-        break;
-        case 'Geografia' : 
-        setListquestions(preguntas.Geografía);
-        break;
-        case 'Ciencia' : 
-        setListquestions(preguntas.Ciencia);
-        break;
-        case 'Entretenimiento' : 
-        setListquestions(preguntas.Entretenimiento);
-        break;      
-    }
+  console.log('test');
+  console.log(questions)
 
-    
-    return () => mounted = false;
-  }, [])
-
-
-  function shuffleArray(array) {
-    for (let i = array.length - 1; i > 0; i--) {
-      const j = Math.floor(Math.random() * (i + 1));
-      [array[i], array[j]] = [array[j], array[i]];
-    }
-    return array;
+  function setAnswered(i){
+    localStorage.setItem(category, localStorage.getItem(category)+i+',');
   }
 
-
+  const indicesArray = localStorage.getItem(category).split(",").map(str => parseInt(str.trim()));
+  console.log(indicesArray)
 
   return (
     <div className='questions'>
@@ -66,16 +37,23 @@ export default function Questions() {
         </h1>
         <div className='questions-cards'>
           {
-            shuffleArray(listQuestions).map(item => 
-              <Link className='card-question' to={"/quiz"}
+           questions.map(item => 
+            (!indicesArray.includes(item.index) ) ?
+            <Link className='card-question' onClick={() => setAnswered(item.index)} to={"/quiz"}
               state={{
                 pregunta: item.Pregunta,
-                respuestas: [item.Incorrecta1, item.Incorrecta2, item.Incorrecta3, item.Correcta ],
+                respuestas: [item.Incorrecta1, item.Incorrecta2, item.Incorrecta3, item.Correcta],
                 correcta: item.Correcta
               }}
             >
-              {i++}
+              { i++}
             </Link>
+
+            : 
+
+            <div className='card-question-answered'> 
+                 { i++}
+              </div>
               )
           }
 
@@ -87,3 +65,4 @@ export default function Questions() {
     </div>
   )
 }
+
