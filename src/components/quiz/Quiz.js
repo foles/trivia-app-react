@@ -12,7 +12,7 @@ export default function Quiz() {
 
   // const history = useHistory();
   // const navigate = useNavigate();
-  const [seconds, setSeconds] = useState(10); // Establece el tiempo inicial en segundos
+  const [seconds, setSeconds] = useState(15); // Establece el tiempo inicial en segundos
 
   const [respuestasRandom, setRespuestasrandom] = useState([]); // Establece el tiempo inicial en segundos
   var timer;

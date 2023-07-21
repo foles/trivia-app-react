@@ -363,7 +363,7 @@ export const preguntas = {
       "Pregunta": "¿Cuál es la franquicia de videojuegos más vendida de todos los tiempos?",
       "Incorrecta1": "Minecraft",
       "Incorrecta2": "Call of Duty",
-      "Incorrecta3": "Super Mario Bros.",
+      "Incorrecta3": "Super Mario Bros",
       "Correcta": "Grand Theft Auto"
      },
      {
@@ -530,7 +530,7 @@ export const preguntas = {
      {
       "Pregunta": "¿Qué famoso guitarrista lideró la banda de rock Guns N' Roses?",
       "Incorrecta1": "Eddie Van Halen",
-      "Incorrecta2": "Slash",
+      "Incorrecta2": "Kashmir",
       "Incorrecta3": "Jimmy Page",
       "Correcta": "Slash"
      },
@@ -942,7 +942,7 @@ export const preguntas = {
       "Incorrecta1": "Belgrado",
       "Incorrecta2": "Budapest",
       "Incorrecta3": "Prada",
-      "Correcta": "Zagreb."
+      "Correcta": "Zagreb"
      },
      {
       "Pregunta": "¿Cuál es el archipiélago más grande del mundo?",
@@ -1147,7 +1147,7 @@ export const preguntas = {
       "Incorrecta1": "J. R. R Tolkien",
       "Incorrecta2": "Pablo Neruda",
       "Incorrecta3": "Edgar Allan Poe",
-      "Correcta": "Miguel de Cervantes."
+      "Correcta": "Miguel de Cervantes"
      },
      {
       "Pregunta": "¿Dónde se encuentra la Sagrada Familia?",
@@ -1194,16 +1194,16 @@ export const preguntas = {
      {
       "Pregunta": "¿Qué famoso compositor es conocido por su famosa Novena Sinfonía?",
       "Incorrecta1": "Frédéric Chopin",
-      "Incorrecta2": "Ludwig van Beethoven",
-      "Incorrecta3": "Johann Sebastian Bach",
-      "Correcta": "Wolfgang Amadeus Mozart"
+      "Incorrecta2": "Johann Sebastian Bach",
+      "Incorrecta3": "Wolfgang Amadeus Mozart",
+      "Correcta": "Ludwig van Beethoven"
      },
      {
-      "Pregunta": "Mucha gente lo utiliza a diario pero, ¿sabes qué es una aféresis?",
-      "Incorrecta1": "Es una expresión breve que resume una observación general o un principio moral.",
-      "Incorrecta2": "Es la supresión de una o más letras al principio de un vocablo.",
+      "Pregunta": "Mucha gente lo utiliza a diario pero, ¿sabes qué es una aliteración?",
+      "Incorrecta1": "Es una expresión breve que resume una observación general o un principio moral",
+      "Incorrecta2": "Es la supresión de una o más letras al principio de un vocablo",
       "Incorrecta3": "Es cuando un sonido en cualquier posición interna de la palabra desaparece",
-      "Correcta": "Es la repetición del mismo sonido consonante en secuencia."
+      "Correcta": "Es la repetición del mismo sonido consonante en secuencia"
      },
      {
       "Pregunta": "¿Cómo se le llama a una colección de revistas, diarios y publicaciones periódicas?",
@@ -1286,8 +1286,8 @@ export const preguntas = {
       "Pregunta": "¿Quién fue el autor del famoso mural 'Los fusilamientos del 3 de mayo'?",
       "Incorrecta1": "Pablo Picasso",
       "Incorrecta2": "Salvador Dalí",
-      "Incorrecta3": "Francisco de Goya",
-      "Correcta": "Diego Rivera"
+      "Incorrecta3": "Diego Rivera",
+      "Correcta": "Francisco de Goya"
      },
      {
       "Pregunta": "¿Cuál es el nombre del movimiento artístico que destaca por el uso de la perspectiva y la representación realista?",
@@ -1413,9 +1413,9 @@ export const preguntas = {
      {
       "Pregunta": "¿Cuáles son los cinco tipos de sabores primarios?",
       "Incorrecta1": "Dulce, ácido, picante, amargo,  y salado ",
-      "Incorrecta2": "Dulce, salado, picante, amargo,  y cítrico. ",
-      "Incorrecta3": "Dulce, refrescante , picante, amargo,  y ácido. ",
-      "Correcta": "Dulce, amargo, ácido, salado y umami."
+      "Incorrecta2": "Dulce, salado, picante, amargo,  y cítrico",
+      "Incorrecta3": "Dulce, refrescante , picante, amargo,  y ácido",
+      "Correcta": "Dulce, amargo, ácido, salado y umami"
      },
      {
       "Pregunta": "¿En qué se especializa la cartografía?",
@@ -1492,7 +1492,7 @@ export const preguntas = {
       "Incorrecta1": "la fabricación de campanas",
       "Incorrecta2": "resolución de ecuaciones matemáticas complejas",
       "Incorrecta3": "un antiguo ritual alquimista",
-      "Correcta": "el cálculo de probabilidades."
+      "Correcta": "el cálculo de probabilidades"
      },
      {
       "Pregunta": "¿En qué lugar del cuerpo se produce la insulina?",
@@ -1506,7 +1506,7 @@ export const preguntas = {
       "Incorrecta1": "Transducción nutricional",
       "Incorrecta2": "Absorción nutricional",
       "Incorrecta3": "Alimentación Clorofílica",
-      "Correcta": "Fotosíntesis."
+      "Correcta": "Fotosíntesis"
      },
      {
       "Pregunta": "¿Qué sustancia es capaz de disolver el oro?",
@@ -1534,7 +1534,7 @@ export const preguntas = {
       "Incorrecta1": "Un animal con reproducción asexual",
       "Incorrecta2": "Un animal que puede cambiar de sexo durante su ciclo de vida",
       "Incorrecta3": "Un animal que come tanto carne como plantas",
-      "Correcta": "Un animal que nace de un huevo."
+      "Correcta": "Un animal que nace de un huevo"
      },
      {
       "Pregunta": "¿Cuál es el único mamífero capaz de volar?",
